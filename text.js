@@ -1,12 +1,10 @@
-var youLikeMeat = true;
-
+var youLikeMeat = false;
+var myNum = 10
 if (youLikeMeat){
 
-    document.write("Here is the meaty menu...")
+    document.write("you like meat")
 
-} 
+} else{
 
-if (7 < 5){
-
-    document.write("this expression is true")
+    document.write("you hate meat")
 }

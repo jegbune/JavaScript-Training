@@ -15,6 +15,5 @@ if(myAge > 30){
 }else{
 
     document.write("you are not over 10!");
-
 }
 4+5

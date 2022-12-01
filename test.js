@@ -1,10 +1,10 @@
- var links = document.getElementsByTagName("a");
+//  var links = document.getElementsByTagName("a");
 
-for (i = 1; i <= links.length; i++) {
+// for (i = 1; i <= links.length; i++) {
 
-    console.log("This is link number " + i);
+//     console.log("This is link number " + i);
 
-}
+// }
 
 // document.write("all links now looped")
 //var i =0
@@ -23,10 +23,10 @@ for (i = 1; i <= links.length; i++) {
 
 // console.log("I have broken out of the loop")
 
-var links = document.getElementsByTagName("a");
+var link = document.getElementsByTagName("a");
+var i = 0;
+while (i <= link.length) {
 
-for (i = 0; i <= links.length; i++) {
-
-    links[i].className = "link-" +i;
-
+    link[i].className = "link-" +i;
+    i++
 }

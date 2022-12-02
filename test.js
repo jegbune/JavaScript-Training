@@ -30,7 +30,7 @@
 //     link[i].className = "link-" +i;
 //     i++
 // }
-var a = "apple";
+var a = "6";
 var b = 5;
 console.log(a + b);
 console.log(typeof (a + b));
@@ -45,6 +45,12 @@ if(isNaN(a)) {
 }else{
     console.log("meaning of life is " + (a * b));
 }
+if(!isNaN(a)){
 
+    console.log("This is not (not a Number) " + (a * b));
+
+}else{
+    console.log("this is a not number")
+}
 
 

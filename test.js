@@ -30,7 +30,7 @@
 //     link[i].className = "link-" +i;
 //     i++
 // }
-var a = 5;
+var a = "apple";
 var b = 5;
 console.log(a + b);
 console.log(typeof (a + b));
@@ -39,6 +39,12 @@ console.log(Math.floor(7.5));
 console.log(Math.ceil(7.1));
 console.log(Math.max(7,5,10,8,10.1));
 console.log(Math.PI);
+if(isNaN(a)) {
+    console.log("That isnt even a number thicie");
+
+}else{
+    console.log("meaning of life is " + (a * b));
+}
 
 
 

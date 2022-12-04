@@ -8,8 +8,4 @@
 // console.log(myArray);
 // myArray[2] = false;
 
-var myArray2 = [10,20,"hi",false];
-console.log(myArray2);
-var myArray3 = new Array();
-var myArray4 = new Array(5);
-console.log(Array2.length);
+//  

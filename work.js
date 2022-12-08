@@ -1,8 +1,20 @@
-function sum (a,b){
+// function sum (){
 
-    var add = (a+b);
-    return add;
+
+//     var add = (a+b);
+//     return add;
+// }
+// sum (2,3,3,4,5,6,7,8,8)
+function add(){
+    
+    let sum = 0;
+    for( i = 0; i <arguments.length; i++){
+        sum += arguments[i];
+    }
+    console.log(sum)
+    return sum;
+
 }
 
-var myResult = sum (2,5);
-document.write(myResult);
+add(1,2,3,4,5,6,7,100)
+

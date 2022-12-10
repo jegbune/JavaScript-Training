@@ -10,3 +10,8 @@ function myFunction(a, b){
     return a*b;
 }
 console.log(x);
+let y = "John";
+let z = new String("John");
+
+console.log(typeof y + typeof z)
+console.log(z.string)

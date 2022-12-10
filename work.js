@@ -18,3 +18,8 @@ function add(){
 
 add(1,2,3,4,5,6,7,100)
 
+function myFunction(){
+    let text = document.getElementById("word").innerHTML;
+    document.getElementById("word").innerHTML =text.replace("Microsoft", "Jerxpress");
+
+}

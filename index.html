@@ -22,5 +22,20 @@
         document.getElementById("demo1").innerHTML = Date();
     }
 </script>
+<button onclick="changeName()">
+    Change your name
+</button>
+<p id="name">My, name, is, Egbune, Jeremiah, ike</p>
+<p id="display"></p>
+    <script>
+        function changeName(){
+            let text=document.getElementById("name").innerHTML;
+            document.getElementById("name").innerHTML=text.replace("ike","Ikechukwu");
+        }
+
+        let text=document.getElementById("name").innerHTML;
+        let display=text.split;
+        document.getElementById("display").innerHTML=display;
+</script>
 </body>
 </html>

@@ -25,17 +25,14 @@
 <button onclick="changeName()">
     Change your name
 </button>
-<p id="name">My, name, is, Egbune, Jeremiah, ike</p>
+<p id="name">My name is Egbune Jeremiah ike. ike is a boy, ike is a student
+</p>
 <p id="display"></p>
     <script>
         function changeName(){
             let text=document.getElementById("name").innerHTML;
-            document.getElementById("name").innerHTML=text.replace("ike","Ikechukwu");
+            document.getElementById("name").innerHTML=text.replaceAll("ike","Ikechukwu");
         }
-
-        let text=document.getElementById("name").innerHTML;
-        let display=text.split;
-        document.getElementById("display").innerHTML=display;
 </script>
 </body>
 </html>

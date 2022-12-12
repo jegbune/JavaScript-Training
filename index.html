@@ -28,11 +28,28 @@
 <p id="name">My name is Egbune Jeremiah ike. ike is a boy, ike is a student
 </p>
 <p id="display"></p>
-    <script>
+
+<button onclick="textLock()">Change text transform</button>
+<p id="tex">This is text</p>
+<p id="tex1"></p>
+<p id="split"></p>
+
+
+<script>
         function changeName(){
             let text=document.getElementById("name").innerHTML;
             document.getElementById("name").innerHTML=text.replaceAll("ike","Ikechukwu");
         }
+        function textLock(){
+
+            let word = document.getElementById("tex").innerHTML;
+            let text2 = word.toLowerCase();
+            document.getElementById("tex1").innerHTML=text2;
+
+        }
+        let text = document.getElementById("name").innerHTML;
+        document.getElementById("split").innerHTML = text.split(" ");
 </script>
+
 </body>
 </html>

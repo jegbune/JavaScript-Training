@@ -17,17 +17,19 @@
     <script>
         let header = "This is a Header";
         let list = ["list 1", "list 2", "list 3", "list 4"];
+        let text = 0.2 + 0.1;
 
-let html = `<h2>${header}</h2><div class="list"><ul>`;
+        let html = `<h2>${header}</h2><div class="list"><ul>`;
 
     for (let x of list) {
         html += `<li>${x}</li>`;
     }
 
     html += `</ul></div>`;
-
+    html += text;
 document.getElementById("javaScriptHtml").innerHTML = html;
-    </script>
+   
+   </script>
 
 </body>
 </html>

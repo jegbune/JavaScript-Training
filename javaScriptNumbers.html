@@ -23,18 +23,19 @@
             a = "5"
             result = x + z + a;
             myNumber = 2;
+            txt = "";
 
         while (myNumber != Infinity){
-            myNumber = myNumber *myNumber;
-
+            myNumber = myNumber * myNumber;
+            txt = txt + myNumber + "<br>"
         }
+        document.getElementById("demo4").innerHTML = txt;
 
 
             document.getElementById("demo").innerHTML = x + "<br>" + y;
             document.getElementById("demo1").innerHTML = result;
-            document.getElementById("demo2").innerHTML = typeof(x);
+            document.getElementById("demo2").innerHTML = typeof(txt);
             document.getElementById("demo3").innerHTML = isNaN(x);
-            document.getElementById("demo4").innerHTML = myNumber;
 
 
     </script>

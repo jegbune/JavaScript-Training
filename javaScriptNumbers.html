@@ -12,7 +12,9 @@
     <p id="demo2"></p>
     <p id="demo3"></p>
     <p id="demo4"></p>
-
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    
 
 
 
@@ -24,18 +26,22 @@
             result = x + z + a;
             myNumber = 2;
             txt = "";
+            b = 0xFF;
+            k = 32;
 
         while (myNumber != Infinity){
             myNumber = myNumber * myNumber;
             txt = txt + myNumber + "<br>"
         }
-        document.getElementById("demo4").innerHTML = txt;
-
-
             document.getElementById("demo").innerHTML = x + "<br>" + y;
             document.getElementById("demo1").innerHTML = result;
             document.getElementById("demo2").innerHTML = typeof(txt);
             document.getElementById("demo3").innerHTML = isNaN(x);
+            document.getElementById("demo4").innerHTML = txt;
+            document.getElementById("demo5").innerHTML = b;
+            document.getElementById("demo5").innerHTML = k.toString(32) + "<br>" + k.toString(2) + "<br>" + k.toString(8);
+
+
 
 
     </script>

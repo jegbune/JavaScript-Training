@@ -14,6 +14,7 @@
     <p id="demo4"></p>
     <p id="demo5"></p>
     <p id="demo6"></p>
+    <p id="demo7"></p>
     
 
 
@@ -28,6 +29,8 @@
             txt = "";
             b = 0xFF;
             k = 32;
+            c = 500;
+            d = new Number(500);
 
         while (myNumber != Infinity){
             myNumber = myNumber * myNumber;
@@ -39,7 +42,8 @@
             document.getElementById("demo3").innerHTML = isNaN(x);
             document.getElementById("demo4").innerHTML = txt;
             document.getElementById("demo5").innerHTML = b;
-            document.getElementById("demo5").innerHTML = k.toString(32) + "<br>" + k.toString(2) + "<br>" + k.toString(8);
+            document.getElementById("demo6").innerHTML = k.toString(32) + "<br>" + k.toString(2) + "<br>" + k.toString(8);
+            document.getElementById("demo7").innerHTML = (c==d);
 
 
 

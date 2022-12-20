@@ -9,3 +9,9 @@
 // myArray[2] = false;
 
 //  
+
+let cars = ["Toyota", "Honda", "BMW", "Kia",]
+console.log(cars[3])
+
+let person = {firstName:"Jeremiah", lastName: "Egbune", age:23};
+console.log(cars.length);

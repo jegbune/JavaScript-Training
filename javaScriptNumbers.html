@@ -18,13 +18,13 @@
     <p id="demo8"></p>
     <p id="demo9"></p>
     <p id="demo10"></p>
-
+    <p id="demo11"></p>
 
     
 
 
 
-    <script>
+    <!-- <script>
         let x = NaN;
             y = 3.14;
             z = 4;
@@ -60,6 +60,18 @@
 
 
 
+    </script> -->
+
+    <script>
+        let identity = ["Ephraim", "Blessing", "Eliezer", "Victoria", "Jeremiah", "Glory"];
+        let family = identity.length;
+
+        let result = "<ul>"
+        for (let i = 0; i < family; i++){
+            result += "<li>" + identity[i] + "</li>"
+        }
+        result += "</ul>"   
+        document.getElementById("demo11").innerHTML = result;
     </script>
     
 </body>

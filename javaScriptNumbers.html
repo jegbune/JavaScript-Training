@@ -19,6 +19,7 @@
     <p id="demo9"></p>
     <p id="demo10"></p>
     <p id="demo11"></p>
+    <p id="demo12"></p>
 
     
 
@@ -74,5 +75,19 @@
         document.getElementById("demo11").innerHTML = result;
     </script>
     
+    <button onclick="push()">
+        Try it
+    </button>
+
+    <script>
+        let name = ["Jeremiah","Ikechukwu"]
+        document.getElementById("demo12").innerHTML = name;
+
+        function push(){
+            name.push("Egbune");
+            document.getElementById("demo12").innerHTML = name;
+        }
+    </script>
+
 </body>
 </html>

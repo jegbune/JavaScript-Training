@@ -20,6 +20,7 @@
     <p id="demo10"></p>
     <p id="demo11"></p>
     <p id="demo12"></p>
+    <p id="demo13"></p>
 
     
 
@@ -85,8 +86,12 @@
 
         function push(){
             name.push("Egbune");
+            // name[name.length] = "Egbune";
             document.getElementById("demo12").innerHTML = name;
         }
+        // let days = new Array(9,15,30,2,13);
+        let days = [9,15,30,2,13]
+        document.getElementById("demo13").innerHTML =typeof days;
     </script>
 
 </body>

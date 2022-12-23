@@ -21,6 +21,10 @@
     <p id="demo11"></p>
     <p id="demo12"></p>
     <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+
 
     
 
@@ -91,7 +95,18 @@
         }
         // let days = new Array(9,15,30,2,13);
         let days = [9,15,30,2,13]
-        document.getElementById("demo13").innerHTML =typeof days;
+        // document.getElementById("demo13").innerHTML =days.join("*");
+        document.getElementById("demo13").innerHTML =days.pop();
+        document.getElementById("demo14").innerHTML =days;
+        document.getElementById("demo15").innerHTML =days.unshift("25");
+        document.getElementById("demo16").innerHTML =days;
+
+
+
+
+
+
+
     </script>
 
 </body>

@@ -5,5 +5,5 @@ var str3 = str.slice(2);
 console.log(str3);
 var tags ="meat,ham,salami, pork, beef, chicken";
 console.log(tags);
-var tagsArray = tags.splt(",");
+var tagsArray = tags.split(",");
 console.log(tagsArray);

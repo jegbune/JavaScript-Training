@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,6 +24,7 @@
     <p id="demo14"></p>
     <p id="demo15"></p>
     <p id="demo16"></p>
+    <p id="demo17"></p>
 
 
     
@@ -68,7 +69,7 @@
 
     </script> -->
 
-    <script>
+   <!-- <script>
         let identity = ["Ephraim", "Blessing", "Eliezer", "Victoria", "Jeremiah", "Glory"];
         let family = identity.length;
 
@@ -100,6 +101,9 @@
         document.getElementById("demo14").innerHTML =days;
         document.getElementById("demo15").innerHTML =days.unshift("25");
         document.getElementById("demo16").innerHTML =days;
+        let totalArray = name.concat(days,identity);
+        document.getElementById("demo17").innerHTML =totalArray;
+        
 
 
 
@@ -108,6 +112,41 @@
 
 
     </script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript array sort</title>
+</head>
+<body>
+    <p id = "demo"></p>
+    <p id = "demo1"></p>
+    <p id = "demo2"></p>
+    <p id = "demo3"></p>
+
+
+
+    <script>
+        let myArray = ["Love","Joy", "Peace", "Faithfulness", "Goodness", "Self-Control", "Long-suffering"]
+        document.getElementById("demo").innerHTML = myArray;
+        myArray.sort();
+        myArray.reverse();
+
+        document.getElementById("demo1").innerHTML = myArray;
+
+
+        let myNumber = [30,50,20,78,100];
+        document.getElementById("demo2").innerHTML = myNumber;
+        myNumber.sort(function(a,b){return a-b})
+        document.getElementById("demo3").innerHTML = myNumber 
+    </script>
+
 
 </body>
 </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array sort</title>
+</head>
+<body>
+    <button onclick="sortAlphabetically()">Sort Alphabetically</button>
+    <button onclick="sortNumerically()">Sort Numerically</button>
+    <button onclick="sortRandomly()">Sort Randomly</button>
+
+    <p id="sort"></p>
+
+    <script>
+        let Numbers=[40, 100, 1, 5, 25, 10]
+        document.getElementById("sort").innerHTML = Numbers;
+        
+        function sortNumerically(){
+            Numbers.sort(function(a, b){return(a-b)});
+            document.getElementById("sort").innerHTML = Numbers;
+
+        }
+        function sortAlphabetically(){
+            Numbers.sort();
+            document.getElementById("sort").innerHTML = Numbers;
+        }
+
+        function sortRandomly(){
+            Numbers.sort(function(){return 0.5 - Math.random()});
+            document.getElementById("sort").innerHTML = Numbers;
+        }
+        
+    </script>
+
+</body>
+</html>

@@ -67,6 +67,8 @@
         ];
         displayCars();
         Cars.sort(function(a, b){return a.Year - b.Year})
+        Cars.sort();
+
         displayCars()
         function displayCars(){
             document.getElementById("Cars").innerHTML = 

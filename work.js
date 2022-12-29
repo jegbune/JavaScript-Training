@@ -17,10 +17,15 @@ function add(){
 
 }
 
-add(1,2,3,4,5,6,7,100)
+let sum = [1,2,3,4,5,6,7,100]
+result = sum.reduce(myFunction1); 
 
-function myFunction(){
-    let text = document.getElementById("word").innerHTML;
-    document.getElementById("word").innerHTML =text.replace("Microsoft", "Jerxpress");
+
+function myFunction1(total,value){
+    // let text = document.getElementById("word").innerHTML;
+    // document.getElementById("word").innerHTML =text.replace("Microsoft", "Jerxpress");
+
+    return total +value;
 
 }
+console.log(result);

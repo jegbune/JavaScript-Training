@@ -9,3 +9,18 @@ myNumberUpdate = myNumber.sort(function(a,b){return(a-b)});
 console.log(myNumberUpdate);
 myNumber.sort(function(a, b){return(b-a)});
 console.log(myNumber);
+
+const over18 = myNumber.filter(myFunction);
+
+function myFunction(value){
+    return value > 25;
+
+}
+console.log(over18)
+let txt = ""
+myNumber.forEach(myfunction1);
+
+function myfunction1(value){
+    txt += value + "<br>";
+}
+console.log(txt)

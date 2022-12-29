@@ -10,12 +10,23 @@
     <button onclick="sortAlphabetically()">Sort Alphabetically</button>
     <button onclick="sortNumerically()">Sort Numerically</button>
     <button onclick="sortRandomly()">Sort Randomly</button>
+    <button onclick="fisherYates()">Sort Fisher fisherYates Method</button>
+
 
     <p id="sort"></p>
+    <p id="lowerest"></p>
+    <p id="highest"></p>
+    <p id="Cars"></p>
+
 
     <script>
         let Numbers=[40, 100, 1, 5, 25, 10]
         document.getElementById("sort").innerHTML = Numbers;
+        Numbers.sort(function(a, b){return(a-b)});
+        document.getElementById("lowerest").innerHTML = "this is the lowerest value of the array " + Numbers[0];
+        Numbers.sort(function(a, b){return(b-a)});
+        document.getElementById("highest").innerHTML = "this is the highest value of the array " + Numbers[0];
+
         
         function sortNumerically(){
             Numbers.sort(function(a, b){return(a-b)});
@@ -26,12 +37,47 @@
             Numbers.sort();
             document.getElementById("sort").innerHTML = Numbers;
         }
-
         function sortRandomly(){
             Numbers.sort(function(){return 0.5 - Math.random()});
             document.getElementById("sort").innerHTML = Numbers;
         }
         
+            // const points = [40, 1, 100, 5, 25, 10];
+            // document.getElementById("fisherYates").innerHTML = points;
+
+            function fisherYates(){
+                for (i = Numbers.length -1; i > 0; i--){
+
+                    let j = Math.floor(Math.random() * (i+1))
+                    let k = Numbers[i];
+                    Numbers[i] = Numbers[j];
+                    Numbers[j] = k;
+
+                }
+                document.getElementById("sort").innerHTML = Numbers;
+            
+        }
+
+        const Cars = [
+            {brand : "Toyota", Year : 2000},
+            {brand : "BMW", Year : 1990},
+            {brand : "Land Rover", Year : 1952},
+            {brand : "Innoson", Year : 2010},
+            {brand : "Honda", Year : 2002}
+        ];
+        displayCars();
+        Cars.sort(function(a, b){return a.Year - b.Year})
+        displayCars()
+        function displayCars(){
+            document.getElementById("Cars").innerHTML = 
+            Cars[0].brand +" " + Cars[0].Year + "<br>" +
+            Cars[1].brand +" " + Cars[1].Year + "<br>" +
+            Cars[2].brand +" " + Cars[2].Year + "<br>" +
+            Cars[3].brand +" " + Cars[3].Year + "<br>" +
+            Cars[4].brand +" " + Cars[4].Year + "<br>" ;
+        }
+        
+
     </script>
 
 </body>

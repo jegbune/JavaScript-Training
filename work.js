@@ -17,7 +17,7 @@ function add(){
 
 }
 
-let sum = [1,2,3,4,5,6,7,100]
+let sum = [1,2,3,4,5,6,7,100];
 result = sum.reduce(myFunction1); 
 
 

@@ -30,3 +30,9 @@ function myFunction2(value, index){
     return value < 3;
 }
 console.log("All over 18 is " + above18);
+
+let select = myNumber.some(myFunction3);
+function myFunction3(value){
+    return value > 18;
+}
+console.log(select)

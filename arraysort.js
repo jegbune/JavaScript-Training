@@ -23,4 +23,10 @@ myNumber.forEach(myfunction1);
 function myfunction1(value){
     txt += value + "<br>";
 }
-console.log(txt)
+console.log(txt);
+
+let above18 = myNumber.every(myFunction2)
+function myFunction2(value, index){
+    return value < 3;
+}
+console.log("All over 18 is " + above18);

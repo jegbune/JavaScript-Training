@@ -11,3 +11,11 @@ console.log("The Square root of 625 is " + Math.sqrt(625))
 console.log("The Absolute value of -4.2 is " + Math.abs(-4.2))
 console.log("The sine value of 90 degrees is " + Math.sin(90 * Math.PI / 180))
 console.log("The sine value of 9 degrees is " + Math.sin(9 * Math.PI / 180))
+
+console.log(Math.min(1,9,30 , -3, 100))
+console.log(Math.max(1,9,30 , -3, 100))
+console.log(Math.random())
+console.log(Math.log(100))
+console.log(Math.log2(100))
+console.log(Math.log10(1000))
+

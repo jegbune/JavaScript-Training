@@ -12,11 +12,12 @@
     <button onclick="sortRandomly()">Sort Randomly</button>
     <button onclick="fisherYates()">Sort Fisher fisherYates Method</button>
 
-
+    <button onclick="random()"> pick random Numbers</button>
     <p id="sort"></p>
     <p id="lowerest"></p>
     <p id="highest"></p>
     <p id="Cars"></p>
+    <p id="Random"></p>
 
 
     <script>
@@ -80,6 +81,10 @@
         }
         
 
+        function random(){
+            document.getElementById("Random").innerHTML = 
+            Math.floor(Math.random() * 20);
+        }
     </script>
 
 </body>

@@ -9,7 +9,7 @@
 // else{
 // console.log("You hate meat")
 // }
-let myAge =900;
+/*let myAge =900;
 if (myAge > 30) {
 
     console.log(" you are over 30")
@@ -25,4 +25,4 @@ else if(myAge > 10) {
 }
 else{
     console.log ("you are not over 10!")
-}
+}*/

@@ -8,16 +8,35 @@
 </head>
 <body>
     
-    <input type="number" id="age">
+    <input  id="age">
     <button onclick="checkAge()" >Confirm your Age</button>
 <p id="result"></p>
     <script>
-        function checkAge(){
+       /* function checkAge(){
             let age =  document.getElementById("age").value;
             let Adult = (age < 18) ? "Too Young" : "Old enough" ;
+            // if(age < 18){
+                // document.getElementById("result").innerHTML = "You are too young to vote"
+            // }
+            // else{
+                // document.getElementById("result").innerHTML = "You are old enough to vote"
+                
+            // }
             document.getElementById("result").innerHTML = Adult + " to vote"
+        }*/
+        function checkAge(){
+            let votable;
+            let age = Number(document.getElementById("age").value);
+            if (isNaN(age)){
+                voteable = "value is not a number";
+            }
+            else{
+                votable = (age < 18) ? "Too Young" : "Old enough";
+
+            }
+            document.getElementById("result").innerHTML = votable;
         }
     </script>
-
+   
 </body>
 </html>

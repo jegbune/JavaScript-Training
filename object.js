@@ -14,7 +14,7 @@ var myCar2 = {
     maxSpeed:70, 
     driver:"Net Ninja", 
     drive: function(speed, time){
-        console.log(speed * time);
+        console.log(speed * time + "mps");
     }
 };
 

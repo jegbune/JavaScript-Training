@@ -26,7 +26,7 @@ else if(myAge > 10) {
 else{
     console.log ("you are not over 10!")
 }*/
-let d = new Date(2023, 0, 14, 23, 47, 0)
+let d = new Date()
 if(d.getHours() < 12){
     console.log("Good Morning")
 }

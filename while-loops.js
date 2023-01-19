@@ -28,8 +28,18 @@
 // console.log (" you are now over 10")
 
 
-for(age = 5; age < 10; age++) {
-    console.log("Your age " + age + " is less than 10");
+// for(age = 5; age < 10; age++) {
+//     console.log("Your age " + age + " is less than 10");
     
+// }
+// console.log (" you are now over 10")
+
+let capacity = 3;
+
+while(capacity < 20){
+    console.log("The capacity of the class grew to " + capacity);
+    capacity++ ;
 }
-console.log (" you are now over 10")
+for (year = 2023; year <= 2038; year++) {
+    console.log(year);
+}

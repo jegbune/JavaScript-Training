@@ -9,6 +9,7 @@
 
 //     console.log(i);
 
+console.log(d)
     
 //     if(i === 7){
 //          break;
@@ -18,10 +19,23 @@
 // console.log("I have broken out of the loop")
 
 
-const cars = ["Acura", "BMW", "VOLVO", "FORD", "Audi", "FIAT", "SAAB"]
-let text = "";
+// const cars = ["Acura", "BMW", "VOLVO", "FORD", "Audi", "FIAT", "SAAB"]
+// let text = "";
 
-for (let i = 0; i < cars.length; i++) {
-    text += cars[i] + "<br>";
+// for (let i = 0; i < cars.length; i++) {
+//     text += cars[i] + "<br>";
+// }
+// console.log(text);
+
+
+let d = new Date();
+
+if (d.getHours() < 12){
+    console.log("Good Morning");
 }
-console.log(text);
+else if(d.getHours() > 12){
+    console.log("Good Afternoon");
+}
+else if(d.getHours() > 16){
+    console.log("Good Evening");
+}

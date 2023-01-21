@@ -42,7 +42,7 @@ var myCar2 = {
     maxspeed:70, 
     driver:"Uber", 
     drive:function(speed,time){
-        console.log(speed * time +"mps");
+        console.log(speed * time);
     }
 };
 

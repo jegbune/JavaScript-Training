@@ -9,7 +9,7 @@
 
 //     console.log(i);
 
-console.log(d)
+// console.log(d)
     
 //     if(i === 7){
 //          break;
@@ -28,14 +28,20 @@ console.log(d)
 // console.log(text);
 
 
-let d = new Date();
+// let d = new Date();
 
-if (d.getHours() < 12){
-    console.log("Good Morning");
+// if (d.getHours() < 12){
+//     console.log("Good Morning");
+// }
+// else if(d.getHours() > 12){
+//     console.log("Good Afternoon");
+// }
+// else if(d.getHours() > 16){
+//     console.log("Good Evening");
+// }
+
+var i = 5;
+for (var i = 0; i < 10; i++) {
+  // some statements
 }
-else if(d.getHours() > 12){
-    console.log("Good Afternoon");
-}
-else if(d.getHours() > 16){
-    console.log("Good Evening");
-}
+console.log(i);

@@ -40,7 +40,7 @@ console.log(txt);
 
 const numbers = [4,9,16,25,36,49]
 
-let fig = "";
+let fig = " ";
 for(let x in numbers){
     fig += numbers[x];
 }

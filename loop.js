@@ -29,21 +29,53 @@
 // console.log(i);
 
 
-const person = {fname:"John", lname:"Doe", age:25};
-const person1 = ["ade", "shola", "wale","austin"]
- let txt= "";
- for(let x in person) {
-     txt += person[x];
+// const person = {fname:"John", lname:"Doe", age:25};
+// const person1 = ["ade", "shola", "wale","austin"]
+//  let txt= "";
+//  for(let x in person) {
+//      txt += person[x];
      
- }
-console.log(txt);
+//  }
+// console.log(txt);
 
-const numbers = [4,9,16,25,36,49]
+// const numbers = {a:4,b:9,c:16,d:25,e:36,f:49}
 
-let fig = " ";
-for(let x in numbers){
-    fig += numbers[x];
-}
+// let fig = " ";
+// for(let x in numbers){
+//     fig += numbers[x];
+// }
+// console.log(fig)
 
-console.log(fig);
-console.log(typeof fig);
+// console.log(fig);
+// console.log(typeof fig);
+
+
+// let text = "";
+//     for(let i=0; i<10; i++){
+//         text += "This Number is " +i;
+//     }
+//     console.log(text)
+
+// let txt = "";
+// let carFeatures= {
+//     name: "Ford",
+//     model: "escape",
+//     year: 2020,
+//     color: "red",
+//     carType: "SUV"
+// };
+// for (let x in carFeatures){
+//     txt +=carFeatures[x];
+// }
+
+// console.log(txt)
+
+let random = [23,2,4,54,100,384,88];
+
+let text = "";
+
+for(let x in random){
+    text += random[x];
+};
+console.log(text);
+console.log(typeof random);

@@ -70,12 +70,16 @@
 
 // console.log(txt)
 
-let random = [23,2,4,54,100,384,88];
+// let random = [23,2,4,54,100,38,88];
 
-let text = "";
+// let text = "";
 
-for(let x in random){
-    text += random[x];
-};
-console.log(text);
-console.log(typeof random);
+// for(let x in random){
+//     text += random[x];
+// };
+// console.log(text);
+// console.log(random);
+ 
+
+let array = ["ade","timi","joshua", "kehinde", "seyi"];
+console.log (typeof array)

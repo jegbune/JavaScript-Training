@@ -34,12 +34,19 @@
 // }
 // console.log (" you are now over 10")
 
-let capacity = 3;
+// let capacity = 3;
 
-while(capacity < 20){
-    console.log("The capacity of the class grew to " + capacity);
-    capacity++ ;
+// while(capacity < 20){
+//     console.log("The capacity of the class grew to " + capacity);
+//     capacity++ ;
+// }
+// for (year = 2023; year <= 2038; year++) {
+//     console.log(year);
+// }
+let id = 100;
+let stage = ""
+while (id > 1){
+    stage += "this id is " + id + "<br>";
+    --id
 }
-for (year = 2023; year <= 2038; year++) {
-    console.log(year);
-}
+console.log(stage);

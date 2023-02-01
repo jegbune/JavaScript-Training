@@ -43,10 +43,22 @@
 // for (year = 2023; year <= 2038; year++) {
 //     console.log(year);
 // }
-let id = 100;
-let stage = ""
-while (id > 1){
-    stage += "this id is " + id + "<br>";
-    --id
+// let id = 100;
+// let stage = ""
+// while (id > 1){
+//     stage += "this id is " + id + "<br>";
+//     --id
+// }
+// console.log(stage);
+
+let i = "0"+1;
+let Text = "";
+
+do{
+    Text +="The matric number is F/HD/20/34200" +i;
+    i++
 }
-console.log(stage);
+
+while (i < 85)
+
+console.log(Text)

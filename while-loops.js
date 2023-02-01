@@ -51,14 +51,31 @@
 // }
 // console.log(stage);
 
-let i = "0"+1;
-let Text = "";
+// let i = "0"+1;
+// let Text = "";
 
-do{
-    Text +="The matric number is F/HD/20/34200" +i;
-    i++
+// do{
+//     Text +="The matric number is F/HD/20/34200" +i;
+//     i++
+// }
+
+// while (i < 85)
+
+// console.log(Text)
+
+const car = ["Toyota", "Acura", "Ford", "BMW", "Volkswagen"];
+
+let i = 0;
+let text = "";
+
+// for (;car[i];){
+//     text += car[i] +" ";
+//     i++;
+// }
+
+while (car[i]){
+    text += car[i] +" ";
+    i++;
 }
 
-while (i < 85)
-
-console.log(Text)
+console.log(text)

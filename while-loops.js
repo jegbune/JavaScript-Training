@@ -72,10 +72,10 @@ let text = "";
 //     text += car[i] +" ";
 //     i++;
 // }
-
-while (car[i]){
-    text += car[i] +" ";
+do{
+    text += car[i] + " ";
     i++;
 }
+while (car[i]);
 
-console.log(text)
+console.log(text);

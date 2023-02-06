@@ -40,8 +40,15 @@
 //     console.log("Good Evening");
 // }
 
-var i = 5;
+/*var i = 5;
 for (var i = 0; i < 10; i++) {
   // some statements
 }
-console.log(i);
+console.log(i);*/
+
+
+for(i=1; i<=500; i++){
+  if(i%2==0){
+      console.log(i);
+  }
+} 

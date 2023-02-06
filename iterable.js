@@ -24,15 +24,21 @@
 // }
 // console.log(text);
 
-const map = new Map([
-    ["apple", 200],
-    ["orange", 300],
-    ["bananas", 500],
-    ["pineapple", 700]
+// const map = new Map([
+//     ["apple", 200],
+//     ["orange", 300],
+//     ["bananas", 500],
+//     ["pineapple", 700]
 
-])
-let text = "";
- for (let z of map){
-    text += z + "<br>";
- }
- console.log(text)
+// ])
+// let text = "";
+//  for (let z of map){
+//     text += z + "<br>";
+//  }
+//  console.log(text);
+
+ for(i=1; i<=500; i++){
+    if(i%2==0){
+        console.log(i);
+    }
+} 

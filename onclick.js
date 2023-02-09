@@ -1,5 +1,15 @@
+ let content = document.getElementById("content");
+let button = document.getElementById("show-more");
 
-function show(){
-    let show = document.getElementById("show")
-    show.setAttribute("style", "height:1200px; overflow: visible")
-}
+button.onclick = function(){
+
+    if(content.className =="open"){
+        content.className = "";
+        button.innerHTML = "Show more";
+    } 
+    else{
+        content.className = "open";
+        button.innerHTML = "show less";
+
+    }
+}; 

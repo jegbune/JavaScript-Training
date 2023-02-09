@@ -1,0 +1,35 @@
+p{
+    margin: 0
+}
+body{
+    font-family: arial;
+    margin: 0;
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: black; */
+    
+}
+.containchild{
+    max-height: 400px;
+    background-color: #eee;
+    width: 350px;
+    height: 350px;
+    overflow:hidden;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+.button{
+    background-color: blue;
+    color: white;
+    width: 120px;
+    height:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+}

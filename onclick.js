@@ -1,9 +1,9 @@
- let content = document.getElementById("content");
+let content = document.getElementById("content");
 let button = document.getElementById("show-more");
 
 button.onclick = function(){
 
-    if(content.className =="open"){
+    if(content.className ==  "open"){
         content.className = "";
         button.innerHTML = "Show more";
     } 
@@ -12,4 +12,7 @@ button.onclick = function(){
         button.innerHTML = "show less";
 
     }
-}; 
+    // alert("you clicked me")
+
+};
+// button.addEventListener("click", ()=>{alert("you clicked me")}) 

@@ -10,13 +10,13 @@ body{
     flex-direction: column;
     align-items: center;
     /* background-color: black; */
-    
+    margin-top: 30px;
 }
 .containchild{
-    max-height: 400px;
+    max-height: 1050px;
     background-color: #eee;
     width: 350px;
-    height: 350px;
+    height: 400px;
     overflow:hidden;
     padding: 10px;
     margin-bottom: 20px;

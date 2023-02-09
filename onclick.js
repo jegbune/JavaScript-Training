@@ -1,5 +1,5 @@
 
 function show(){
     let show = document.getElementById("show")
-    show.setAttribute("style", "max-height:1000px; overflow:scroll")
+    show.setAttribute("style", "height:1200px; overflow: visible")
 }

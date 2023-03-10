@@ -11,22 +11,24 @@
 // change the count-el in the HTML to reflect the new count
 
 
-
-
+let saveEl = document.getElementById("save-el");
 let count = document.getElementById('count-el');
 
 console.log(count);
 
 let add = 0;
 function increment(){
-    add = add + 1;
+    add += 1;
     
-    count.innerText = add;
+    count.textContent = add;
 }
 
-
-function save() {  
-    console.log(count)
+function save() { 
+    let countStr = add + ' - '; 
+    saveEl.textContent += countStr;
+    count   .textContent = 0; 
+    add = 0;
+    // alert('you clicked me')
 }
 
 
@@ -40,7 +42,6 @@ function save() {
 // }
 
 // countdown()
-
 
 
 

@@ -1,28 +1,26 @@
-let number1 = document.getElementById('number1');
-let number2 = document.getElementById('number2');
+let num1 = 8;
+let num2 = 2;
 let sumEl = document.getElementById('sum-el')
-let num1 = number1.textContent;
+document.getElementById('num1-el').textContent = num1;
+document.getElementById('num2-el').textContent = num2;
+
 
 function add() {
-    alert(num1)
+    let result = num1 + num2;
+    sumEl.textContent ='Sum: ' +  result;
 }
 
-// function add() {
-//     let result = num1 + num2;
-//     sumEl.textContent ='Sum: ' +  result;
-// }
+function subtract() {
+    let result = num1 - num2;
+    sumEl.textContent ='Sum: ' +  result;
+}
 
-// function subtract() {
-//     let result = num1 - num2;
-//     sumEl.textContent ='Sum: ' +  result;
-// }
+function divide() {
+    let result = num1 / num2;
+    sumEl.textContent ='Sum: ' +  result;
+}
 
-// function divide() {
-//     let result = num1 / num2;
-//     sumEl.textContent ='Sum: ' +  result;
-// }
-
-// function multiply() {
-//     let result = num1 * num2;
-//     sumEl.textContent ='Sum: ' +  result;
-// }
+function multiply() {
+    let result = num1 * num2;
+    sumEl.textContent ='Sum: ' +  result;
+}

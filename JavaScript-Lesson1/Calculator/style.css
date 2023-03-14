@@ -8,6 +8,9 @@ body{
     text-align: center;
 }
 
-#num1-el {
+#num1-el, #num2-el {
     border-bottom: 1px solid #000;
+}
+button {
+    margin: 10px 0;
 }

@@ -1,0 +1,13 @@
+body{
+    margin: 0px auto;
+}
+
+.container {
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#num1-el {
+    border-bottom: 1px solid #000;
+}

@@ -1,9 +1,27 @@
-let age = 100;
+let player1Time = 102;
+let player2Time = 107;
 
-if(age < 100) {
-    console.log("Not eligible")
-} else if(age === 100) {
-    console.log("Here is your Birthday card from the King!")
-} else {
-    console.log("Not eligible, you have already gotten one")
+function getFastestRaceTime() {
+    if (player1Time < player2Time) {
+        return player1Time
+    } else if (player2Time < player1Time) {
+        return player2Time
+    } else {
+        return player1Time
+    }
 }
+
+let fastestRace = getFastestRaceTime()
+
+// console.log( fastestRace)
+
+
+
+
+
+function getTotalRaceTime() {
+    return player1Time + player2Time;
+}
+let totalTime = getTotalRaceTime();
+
+console.log(totalTime)

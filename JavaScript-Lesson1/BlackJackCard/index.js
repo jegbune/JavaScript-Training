@@ -39,7 +39,8 @@ function newCard() {
     let card = 7;
     //  let thirdCard = Math.float(Math.random * 11)
     sum += card;
-    
+    cards.push(card);
     renderGame();
+    alert(cards)
 
 }

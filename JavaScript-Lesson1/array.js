@@ -8,3 +8,9 @@ let messages = [
     "I'm great, Thank you! How about you?",
     "All good. Seen working on my portfolio lately."
 ]
+
+let newMessage = "Same here";
+
+messages.push(newMessage);
+messages.pop()
+console.log(messages);

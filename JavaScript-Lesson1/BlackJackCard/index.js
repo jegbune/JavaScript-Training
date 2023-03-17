@@ -12,7 +12,7 @@ let cardsEl = document.querySelector('#card-el')
 let message = "";
 
  function getRandomCard() {
-    let randomNumber = Math.floor(Math.random() * 10)
+    let randomNumber = Math.floor(Math.random() * 13)+1
     return randomNumber;
  }
 

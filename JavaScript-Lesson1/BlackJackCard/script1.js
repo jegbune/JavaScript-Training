@@ -1,9 +1,10 @@
-let hasSolvedChallenge = false;
-let hasHintsLeft = false;
+let likesDocumentaries = true;
+let likesStartups = true;
 
-if (hasSolvedChallenge === false ||  hasHintsLeft === false) {
-    showSolution()
-}
-function showSolution() {
-    console.log("Showing the solution....")
-}
+if (likesDocumentaries === true || likesStartups === true) {
+    recommentMovie()
+    }
+
+    function recommentMovie() {
+        console.log ("Hey, check out this new film we think you will like!")
+    }

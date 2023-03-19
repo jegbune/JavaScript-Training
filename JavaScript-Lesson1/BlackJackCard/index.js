@@ -55,11 +55,15 @@ function renderGame() {
 }
 
 function newCard() {
+    if (isAlive = false) {
+       let card = "";
+    }else{
     // alert("Drawing a new card from the deck!");
     let card = getRandomCard();
     //  let thirdCard = Math.float(Math.random * 11)
     sum += card;
     cards.push(card);
     renderGame();
+    }
 
 }

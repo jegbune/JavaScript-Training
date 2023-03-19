@@ -1,15 +1,18 @@
-let firstCard = getRandomCard();
-let secondCard = getRandomCard();
 let cards = []
 let sum = 0;
 let hasBlackJack = false;
 let isAlive = false;
+let message = "";
 let messageEl = document.getElementById('message-el')
-// let sumEl = document.getElementById('sum-el')
 let sumEl = document.querySelector('#sum-el')
 let cardsEl = document.querySelector('#card-el')
 
-let message = "";
+let playerName = "Per"
+let playerChips = 145;
+
+let playerEl = document.getElementById("player-el");
+playerEl.textContent = playerName + ': ' + playerChips;
+
 
  function getRandomCard() {
     let randomNumber = Math.floor(Math.random() * 13) + 1;
@@ -23,20 +26,18 @@ let message = "";
   }
 
 function startGame(){
-    isAlive = false;
-
+    isAlive = true;
     let firstCard = getRandomCard();
     let secondCard = getRandomCard(); 
     cards = [firstCard, secondCard]
     sum = firstCard + secondCard
     renderGame();
 }
-
-function renderGame() {
-    cardsEl.textContent = "Cards: " ; 
-    for ( let i = 0; i < cards.length; i++) {
-        cardsEl.textContent += cards[i] + ' ';
-    }
+ function renderGame() {
+     cardsEl.textContent = "Cards: " ; 
+     for ( let i = 0; i < cards.length; i++) {
+         cardsEl.textContent += cards[i] + ' ';
+     }
      
     sumEl.textContent = "Sum: " + sum
     if (sum <= 20) {
@@ -47,23 +48,17 @@ function renderGame() {
     } else {
         message = "You're out of the game!";
         isAlive = false
-    }
-    
-    //CASH OUT
+    }    
     messageEl.textContent = message;
 
 }
 
 function newCard() {
-    if (isAlive = false) {
-       let card = "";
-    }else{
-    // alert("Drawing a new card from the deck!");
-    let card = getRandomCard();
-    //  let thirdCard = Math.float(Math.random * 11)
-    sum += card;
-    cards.push(card);
-    renderGame();
+    if (isAlive === true && hasBlackJack ===false) {
+        let card = getRandomCard();
+        sum += card;
+        cards.push(card);
+        renderGame();
     }
 
 }

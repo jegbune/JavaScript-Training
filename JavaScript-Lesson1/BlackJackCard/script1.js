@@ -1,14 +1,7 @@
-let age = 85;
+let largeCountries = ["China","India","USA","indonesia","Pakistan"];
 
-if (age < 6) {
-    console.log("Free");
-} else if (age < 18) {
-    console.log("Child discount")
-} else if (age < 27) {
-    console.log("Student discount")
-} else if (age < 67) {
-    console.log("Full Price")
-} else {
-    console.log("Senior citizen discount")
+console.log("The 5 Largest countries in the world:" )
+for(let i = 0; i <  largeCountries.length; i++ ) {
+    let country = largeCountries[i]
+    console.log("- " + country)
 }
-   

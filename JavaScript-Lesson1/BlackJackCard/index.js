@@ -11,8 +11,7 @@ let messageEl = document.getElementById('message-el')
 let sumEl = document.querySelector('#sum-el')
 let cardsEl = document.querySelector('#card-el')
 
-
-
+ 
 let playerEl = document.getElementById("player-el");
 playerEl.textContent = player.name + ': $' + player.chips;
 

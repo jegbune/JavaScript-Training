@@ -1,22 +1,14 @@
-// let likesDocumentaries = true;
-// let likesStartups = true;
+let age = 85;
 
-// if (likesDocumentaries === true || likesStartups === true) {
-//     recommentMovie()
-//     }
-
-//     function recommentMovie() {
-//         console.log ("Hey, check out this new film we think you will like!")
-//     }
-
-
-
-let object = {
-    name: "Jeremy",
-    age: 32,
-    gender: function(){
-        console.log('Jeremy is 32 year of age')
-    }
+if (age < 6) {
+    console.log("Free");
+} else if (age < 18) {
+    console.log("Child discount")
+} else if (age < 27) {
+    console.log("Student discount")
+} else if (age < 67) {
+    console.log("Full Price")
+} else {
+    console.log("Senior citizen discount")
 }
-// console.log(object.gender())
-object.gender()
+   

@@ -4,6 +4,8 @@ body {
 
 #container {
     margin-top: 30px;
+    color: lightcoral;
+     font-size: 20px;
 }
 
 #container button {

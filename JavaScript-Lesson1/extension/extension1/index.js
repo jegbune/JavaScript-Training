@@ -1,8 +1,13 @@
 let myLeads = [];
-const inputEl = document.getElementById("input-el")
+let inputEl = document.getElementById("input-el")
 let inputBtn = document.getElementById("input-btn")
+const ulEl = document.getElementById("ul-el")
+const liEl = document.getElementsByTagName("li")
 
 inputBtn.addEventListener("click", function() {
-    myLeads.push("www.awesomelead.com")
-    alert(myLeads)
+    myLeads.push(inputEl.value)
+    for (let i = 0; i < myLeads.length; i++) {
+        ulEl.innerHTML += `<li>` + myLeads[i] + `<li>`
+    
+    } 
 })

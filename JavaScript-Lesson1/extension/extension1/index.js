@@ -15,7 +15,9 @@ function renderLeads() {
     for (let i = 0; i < myLeads.length; i++) {
         listItems += `
             <li>
-                <a href='${myLeads}.com' target='_blank'> ${myLeads[i]}</a>
+                <a href='${myLeads}.com' target='_blank'> 
+                    ${myLeads[i]}
+                </a>
             </li>`
         // const li = document.createElement("li")
         // li.textContent = myLeads[i]

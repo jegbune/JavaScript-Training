@@ -1,8 +1,18 @@
-let myLeads = [ ];
+let myLeads = ["www.awesomelead.com"];
+
+myLeads = JSON.stringify(myLeads)
+
+
+
+// myLeads = JSON.parse(myLeads)
+
+// myLeads.push("www.epiclead.com")
+
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
 
+alert(myLeads)
 // localStorage.setItem("myLead", "www.examplelead.com ")
 // localStorage.setItem ("my name", "Jeremiah")
 // let  = localStorage.getItem("my name");

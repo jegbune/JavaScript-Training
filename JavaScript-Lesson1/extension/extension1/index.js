@@ -1,9 +1,9 @@
-let myLeads = '["www.awesomelead.com"]';
+let myLeads = [];
 
-myLeads = JSON.parse(myLeads);
+// myLeads = JSON.parse(myLeads);
 
-myLeads.push("www.epicLead.com","www.jerxpress.com")
-myLeads = JSON.stringify(myLeads);
+// myLeads.push("www.epicLead.com","www.jerxpress.com")
+// myLeads = JSON.stringify(myLeads);
 
 
 // myLeads = JSON.stringify(myLeads)
@@ -16,18 +16,17 @@ const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
 
-alert(myLeads)
 // localStorage.setItem("myLead", "www.examplelead.com ")
 // localStorage.setItem ("my name", "Jeremiah")
 // let  = localStorage.getItem("my name");
 // alert(myLead)
-localStorage.clear()
 // alert(localStorage.getItem("myLeads"))
 
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
-    renderLeads()
     inputEl.value = ""
+    localStorage.setItem("myLeads",JSON.stringify(myLeads))
+    renderLeads()
 })
 
 function renderLeads() {

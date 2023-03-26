@@ -1,8 +1,12 @@
-let myLeads = ["www.awesomelead.com"];
+let myLeads = '["www.awesomelead.com"]';
 
-myLeads = JSON.stringify(myLeads)
+myLeads = JSON.parse(myLeads);
+
+myLeads.push("www.epicLead.com","www.jerxpress.com")
+myLeads = JSON.stringify(myLeads);
 
 
+// myLeads = JSON.stringify(myLeads)
 
 // myLeads = JSON.parse(myLeads)
 

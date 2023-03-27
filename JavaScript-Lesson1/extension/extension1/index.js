@@ -1,4 +1,4 @@
-let myLeads = [];
+let myLeads = [];   
 
 // myLeads = JSON.parse(myLeads);
 
@@ -22,6 +22,9 @@ const ulEl = document.getElementById("ul-el")
 // alert(myLead)
 // alert(localStorage.getItem("myLeads"))
 
+
+let leadsfromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+alert(leadsfromLocalStorage)
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
     inputEl.value = ""
